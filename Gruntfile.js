@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		concat: {
 			dist: {
-				src: ['js/1.js', 'js/2.js'],
+				src: ['js/first.js', 'js/second.js'],
 				dest: 'build/js/scripts.js',
 			},
 		},
@@ -18,12 +18,10 @@ module.exports = function(grunt) {
 	});
 	
 	grunt.registerTask("log", function() {
-		console.log("Hello World!");
+		console.log("Hello From Grunt Task!");
 	});
 	
 	grunt.registerTask("default", 'watch');
-
-	grunt.loadNpmTasks('grunt-debug-task');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 };
