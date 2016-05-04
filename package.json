@@ -16,6 +16,6 @@
     "grunt-contrib-uglify": "~0.5.0",
     "grunt-contrib-watch": "*",
     "gulp" : "*",
-    "gulp-beautify" : "*"
+    "gulp-uglify" : "*"
   }
 }

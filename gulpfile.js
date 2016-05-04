@@ -1,12 +1,12 @@
 var gulp = require('gulp');
-var beautify = require('gulp-uglyfly');
+var uglify = require('gulp-uglify');
 
 gulp.task('default', function() {
 	console.log("Hello From Gulp!")
 });
 
-gulp.task('uglyfly', function() {
+gulp.task('uglify', function() {
   gulp.src('build/**/*.js')
-    .pipe(beautify({indentSize: 2}))
+    .pipe(uglify({indentSize: 2}))
     .pipe(gulp.dest('./min/'))
 });
